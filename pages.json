@@ -69,5 +69,28 @@
 		"app-plus": {
 			"background": "#efeff4"
 		}
-	}
+	},
+  "subPackages": [
+      {
+        "root": "subpkg",
+        "pages": [{
+                    "path" : "goods-detail/goods-detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                },{
+                    "path" : "goods-list/goods-list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+      }
+    ]
 }
