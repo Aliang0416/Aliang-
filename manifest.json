@@ -53,9 +53,17 @@
         "appid" : "wx460ac5e19ee7b746",
         "setting" : {
             "urlCheck" : false,
-            "checkSiteMap" : false 
+            "checkSiteMap" : false
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "requiredPrivateInfos":[
+          "chooseAddress"
+        ],
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "需要获取用户地址，填写收获位置"
+            }
+        }
     },
     "vueVersion" : "2"
 }
