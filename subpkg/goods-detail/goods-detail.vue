@@ -148,7 +148,7 @@
           // 通过 this 调用映射过来的 addToCart 方法，把商品信息对象存储到购物车中
           this.addToCart(goods)
         } else {
-
+          //立即购买
         }
       }
     }

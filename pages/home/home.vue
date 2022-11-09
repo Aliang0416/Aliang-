@@ -8,7 +8,7 @@
     <swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :circular="true">
       <!-- 循环渲染轮播图的 item 项 -->
       <swiper-item v-for="(item, i) in swiperList" :key="i">
-        <navigator :url="'/subpkg/goods_detail/goods_detail?goods_id=' + item.goods_id" class="swiper-item">
+        <navigator :url="'/subpkg/goods-detail/goods-detail?goods_id=' + item.goods_id" class="swiper-item">
           <!-- 动态绑定图片的 src 属性 -->
           <image :src="item.image_src" ></image>
         </navigator>
@@ -103,7 +103,7 @@
             // 通过双层 forEach 循环，处理 URL 地址
               res.message.forEach(floor => {
                 floor.product_list.forEach(prod => {
-                  prod.url = '/subpkg/goods_list/goods_list?' + prod.navigator_url.split('?')[1]
+                  prod.url = '/subpkg/goods-list/goods-list?' + prod.navigator_url.split('?')[1]
                 })
               })
             this.floorList = res.message

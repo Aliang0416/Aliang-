@@ -76,8 +76,9 @@
               this.scrollTop = this.scrollTop ? 0 : 1
             },
             gotoGoodsList(item3){
+              console.log(item3)
               uni.navigateTo({
-                  url: '/subpkg/goods_list/goods_list?cid=' + item3.cat_id
+                  url: `/subpkg/goods-list/goods-list?cid=${item3.cat_id}`
                 })
             },
             gotoSearch(){
